@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learn HTML</title>
+        <style>
+          table,th,td{
+            border: 1px solid black
+          }
+        </style>
+    </head>
+    <body> <!--if in arabic use (dir ="rtl") inside <> to make it start from the right-->
+
+      <h1>HTML Course</h1><!--This is the largest header(title)--->
+       <img src ="html.png" height ="150" width ="300" alt ="Course logo"><!--alt is for when the image wont show on the browser hence the name alt-->
+      <h2>Course Details</h2><!---This is the second largest header(sub title)-->
+      <p><!--Description-->
+       In this course you will learn how to 
+       design a web page. <strong>strong</strong> tag for imporant text and <b>b</b> tag for bold text, both same boldness
+       you will use Tags like <i>i</i> tag for italic and <em>em</em> for emphasis on a word, both has same result. 
+      </p><hr> <!--hr is to make a light seprating line anywhere-->
+      <p>
+        <b>Schedule for classes: </b><br> <br> <!--br to make a new line /n, one is enough-->
+        8:00 <sub>am</sub> <!--sub to make text lower than line level-->
+        till
+        11:00 <sub>am</sub>
+      </p>
+      <p>  
+        <b>Levels to This Course </b><br>
+        1<sup>st</sup> Basics of HTML <br> <!--sup to make text higher than line level -->
+        2<sup>nd</sup> Advanced information in HTML
+     </p><hr>
+
+      <h2>Course goals</h2>
+      <ol> <!--ol for a ordered list, in default it's numerated using numbers-->
+
+        <li>Learn what is HTML</li> <!--list item-->
+        <li>Learn what every <i>Tag</i> means and how to use it</li>
+        <li>Add text, pictures, links and videos to the webpage </li><br>
+
+      </ol>
+
+      <h4>- Also</h4>
+
+      <ol type ="A"><!--can be capital using "A" or small using "a" and "i" for latin (i.ii,iii,iv, etc..) , upper case as well-->
+
+        <li>how to link javascript and css</li>
+      </ol>
+
+      <h2>Course requirements</h2>
+      <ul> <!--unorder list (not numerated), use inside <> (type = "circle") to make hallow circle-->
+
+        <li>Google chrome or Safari browser</li>
+        <li>Text editor like VSCode</li>
+
+      </ul>
+      <!---Display a link-->
+      <p>
+        For reference click 
+        <a href ="https://github.com/FahadDlaikan">here</a><!--the word will become the link-->
+      </p>
+      <!--Display a video-->
+      <video width ="500" height="400" controls >
+
+        <source src="Rick Roll.mp4" type="video/mp4"> 
+        Sorry Your browser cannot display the video
+
+      </video><br>
+
+      <audio controls>
+
+        <source src="Rick Roll audio.mp3" type="audio/mp3">
+        Sorry Your browser cannot display the audio
+
+      </audio><br>
+
+      <table>
+
+        <caption>Lectures rooms</caption>
+        <tr><!--table row-->
+          <th>Day</th> <!--header-->
+          <th>Room</th>
+        </tr>
+
+        <tr>
+          <td>Sunday-Monday</td><!--data-->
+          <td>Class A</td>
+        </tr>
+
+        <tr>
+          <td>Tuesday-Wednesday</td>
+            <td>Class B</tr>
+          </tr>
+
+        <tr>
+          <td colspan="2">
+          Thursday 
+          Remote</td>
+        </tr>
+
+      </table><hr>
+
+      <h2>Registration form</h2>
+      <form>
+
+        <label for="name">username:</label>
+        <input type="text" id="name">
+
+        <p>
+        <label for="male">male</label>
+        <input type="radio" id="male" name="gender"> <!--name must be identical for both inputs so he can only choose one-->
+        <label for="female">female</label>
+        <input type="radio" id="female" name="gender">
+        </p>
+        <p> Where did you hear about HTML?</p>
+        <input type="checkbox" id="friend" name="friend"> <!-- name and id must be identical-->
+        <label for="friend">Friend</label><br>
+        <input type="checkbox" id="books" name="books">
+        <label for="books">Books</label><br>
+        <input type="checkbox" id="social media" name="social media">
+        <label for="social media">Social media</label><br><br>
+  
+        <!--Drop list you can choose from-->
+        <label for="city">Where are you from?</label>
+        <select id="city" name="city">
+          <option value="Riyadh">Riyadh</option>
+          <option value="Jeddah">Jeddah</option>
+          <option value="Dammam">Dammam</option>
+        </select><br><br>
+
+        <!--submit button-->
+        <input type="submit" value="Join">
+
+      </form>
+
+    </body>
+</html>
